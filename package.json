@@ -1,0 +1,28 @@
+{
+  "name": "node-docker-test",
+  "version": "0.0.1",
+  "description": "Simple express hello world under Docker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risingnote/node-docker-test.git"
+  },
+  "keywords": [
+    "node",
+    "docker",
+    "demo"
+  ],
+  "author": "Jonathan Evans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/risingnote/node-docker-test/issues"
+  },
+  "homepage": "https://github.com/risingnote/node-docker-test#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
