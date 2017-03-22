@@ -1,5 +1,5 @@
 {
   "https" : false,
-  "keyFile" : "full path to key file in pem format",
-  "certFile" : "full path to cert file in pem format"
+  "keyFile" : "/usr/app/config/keyFile.key",
+  "certFile" : "/usr/app/confif/certFile.crt"
 }
