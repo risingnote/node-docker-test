@@ -1,7 +1,7 @@
 {
   "name": "node-docker-test",
   "version": "0.0.1",
-  "description": "Simple express hello world under Docker.",
+  "description": "Express hello world with http or https under Docker.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

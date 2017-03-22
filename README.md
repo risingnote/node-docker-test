@@ -1,2 +1,2 @@
 # node-docker-test
-Play with docker, docker hub, Digital Ocean
+Demonstrate serving page over http or https using config at startup.
