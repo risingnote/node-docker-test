@@ -5,9 +5,9 @@ const http = require('http')
 const https = require('https')
 const fs = require('fs')
 
-const config = require('../config/startup.json')
+const certs = require('../certs/config.json')
 
-const isHttps = config.https && config.https === true 
+const isHttps = certs.https && certs.https === true 
 
 const app = express();
 
@@ -18,8 +18,8 @@ app.get('/', function (req, res) {
 if (isHttps) {
   // Note certfile should be concatenation of server certificate and any intermediate certs.
   const httpsOptions = {
-    key: fs.readFileSync(config.keyFile),
-    cert: fs.readFileSync(config.certFile)
+    key: fs.readFileSync(certs.keyFile),
+    cert: fs.readFileSync(certs.certFile)
   }
   const httpsServer = https.createServer(httpsOptions, app)
   httpsServer.listen(8443, () => {

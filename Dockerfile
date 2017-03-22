@@ -5,7 +5,7 @@ FROM node:7
 #   docker build -t risingnote/node-docker-test .
 # Run container with:
 #   docker run -it --rm --name node-http -p 443:8443 \ 
-#        -v /home/me/config:/usr/app/config risingnote/node-docker-test
+#        -v /home/me/certs:/usr/app/certs risingnote/node-docker-test
 
 LABEL name="Node docker demo" \
       description="Demonstrate and test https setup for node / express" \
@@ -24,10 +24,10 @@ RUN npm install
 RUN mkdir - p /usr/app/src
 COPY src /usr/app/src/
 
-# Which will be served depends on 
+# Which will be served depends on /usr/app/certs/config.json
 EXPOSE 8080
 EXPOSE 8443
 
-VOLUME /usr/app/config
+VOLUME /usr/app/certs
 
 CMD [ "npm", "start" ]

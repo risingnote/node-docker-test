@@ -1,5 +1,0 @@
-{
-  "https" : false,
-  "keyFile" : "/usr/app/config/keyFile.key",
-  "certFile" : "/usr/app/config/certFile.crt"
-}
