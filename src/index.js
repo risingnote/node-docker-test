@@ -22,7 +22,7 @@ if (isHttps) {
     cert: fs.readFileSync(config.certFile)
   }
   const httpsServer = https.createServer(httpsOptions, app)
-  httpServer.listen(8443, () => {
+  httpsServer.listen(8443, () => {
     console.log(`Running https on port ${8443}.`)
   })
 } else {
